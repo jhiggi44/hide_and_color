@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -23,8 +25,21 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <style>
+      body {
+        font-family: 'Oswald', sans-serif; 
+      }
+      a:link, a:visited {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover, a:active {
+        color: yellow;
+      }
+    </style>
   </head>
-  <body>
+  <body style="margin: 0; background-color: white;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
