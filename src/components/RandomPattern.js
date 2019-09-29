@@ -14,7 +14,7 @@ const patterns = importAll(require.context('../patterns', false, /\.(png|jpe?g|s
 class RandomPattern extends Component {
   render() {
     return (
-        <Canvas pattern={patterns['robot.svg']} colors={["rgb(14, 173, 145)", "rgb(224, 40, 51)", "rgb(241, 255, 38)",  "rgb(245, 157, 54)",  "rgb(250, 137, 188)", "rgb(106, 110, 109)"]} />
+        <Canvas />
     );
   }
 }

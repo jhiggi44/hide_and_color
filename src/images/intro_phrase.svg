@@ -8,8 +8,8 @@
     <path id="path-3" d="M 78.042 453.508 C 134.375 446.481 155.843 449.095 194.111 441.694 C 218.809 436.918 254.276 435.68 270.625 436.23 C 279.289 437.224 299.134 435.597 304.001 436.813 C 304.001 436.813 327.535 435.856 332.384 435.856" style="fill: none;"/>
     <path id="path-4" d="M 76.851 446.247 C 147.802 437.559 165.166 439.267 207.133 434.695 C 234.309 431.735 218.587 432.426 296.923 423.54 C 311.134 420.963 374.236 422.069 373.467 423.104" style="fill: none;"/>
   </defs>
-  <text class="intro-text" transform="matrix(2.328192, 0, 0, 2.328192, -105.550919, -273.091797)" style="fill: rgb(51, 51, 51); font-family: Oswald; font-size: 72px; white-space: pre; visibility: hidden;"><textPath xlink:href="#path-0">OH NO!</textPath></text>
-  <text class="intro-text" style="fill: rgb(51, 51, 51); font-family: Oswald; font-size: 60px; white-space: pre; visibility: hidden" transform="matrix(2.306598, 0, 0, 2.306598, -9.507067, -287.70929)"><textPath xlink:href="#path-1">I'm Invisible!</textPath></text>
-  <text class="intro-text" transform="matrix(2.328192, 0, 0, 2.328192, -70.170174, -273.116913)" style="fill: rgb(51, 51, 51); font-family: Oswald; font-size: 44px; white-space: pre; visibility: hidden;"><textPath xlink:href="#path-2">If you color me in,</textPath></text>
-  <text class="intro-text" transform="matrix(2.328192, 0, 0, 2.328192, -96.255707, -254.827545)" style="fill: rgb(51, 51, 51); font-family: Oswald; font-size: 29px; white-space: pre; visibility: hidden;"><textPath xlink:href="#path-4">I will tell you something fun!</textPath></text>
+  <text class="intro-text" transform="matrix(2.328192, 0, 0, 2.328192, -105.550919, -273.091797)" style="fill: #F0E600; font-family: Oswald; font-size: 72px; white-space: pre;"><textPath xlink:href="#path-0">OH NO!</textPath></text>
+  <text class="intro-text" style="fill: #F0E600; font-family: Oswald; font-size: 35px; white-space: pre;" transform="matrix(2.306598, 0, 0, 2.306598, -9.507067, -287.70929)"><textPath xlink:href="#path-1"> I lost all of my color!</textPath></text>
+  <text class="intro-text" transform="matrix(2.328192, 0, 0, 2.328192, -70.170174, -273.116913)" style="fill: #F0E600; font-family: Oswald; font-size: 44px; white-space: pre;"><textPath xlink:href="#path-2">Will you help </textPath></text>
+  <text class="intro-text" transform="matrix(2.328192, 0, 0, 2.328192, -96.255707, -254.827545)" style="fill: #F0E600; font-family: Oswald; font-size: 29px; white-space: pre;"><textPath xlink:href="#path-4">me by coloring me in?</textPath></text>
 </svg>
