@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {DrawingContext} from '../App';
 import Monkey from "./Monkey.js";
 
 const dimensions = (() => {
@@ -14,11 +15,12 @@ const dimensions = (() => {
 })();
 
 function PatternManager(props) {
+    let drawing = useContext(DrawingContext);
     // ADD TO PATTERN MAP WHEN ADDING A PATTERN
     const patternMap = {
         monkey: <Monkey size={`${dimensions}px`} setMessage={props.setMessage} colorCode={props.colorCode} colorName={props.colorName}  />
     }
-    return patternMap[props.pattern];
+    return patternMap[drawing.pattern];
 }
 
 export default PatternManager;

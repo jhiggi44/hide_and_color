@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-
 import Canvas from './components/Canvas';
+import Drawing from './classes/Drawing';
 
 // Styled Components
 const Container = styled.div`
@@ -11,14 +11,31 @@ const Container = styled.div`
   overflow: scroll;
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Container>
+let drawing = new Drawing(
+  "monkey",
+  [
+    "arms",
+    "head",
+    "legs",
+    "tail",
+    "face",
+    "nose",
+    "mouth",
+    "body",
+    "stomach"
+  ]
+)
+
+export const DrawingContext = React.createContext();
+function App() {
+  drawing.generateTasks(5);
+  return (
+    <Container>
+      <DrawingContext.Provider value={drawing}>
         <Canvas />
-      </Container>
-    );
-  }
+      </DrawingContext.Provider>
+    </Container>
+  );
 }
 
 export default App;

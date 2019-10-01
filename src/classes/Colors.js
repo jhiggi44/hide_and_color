@@ -2,145 +2,145 @@ class Colors {
     constructor() {
         this.data = [
             {
-                name: "Maroon",
+                name: "maroon",
                 code: "#C8385A"
             }, 
             {
-                name: "Red",
+                name: "red",
                 code: "#EE204D"
             },
             {
-                name: "Orange",
+                name: "orange",
                 code: "#FF7538"
             },
             {
-                name: "Yellow Orange",
+                name: "yellow orange",
                 code: "#FFB653"
             },
             {
-                name: "Yellow",
+                name: "yellow",
                 code: "#FCE883"
             },
             {
-                name: "Yellow Green",
+                name: "yellow green",
                 code: "#C5E384"
             },
             {
-                name: "Lime Green",
+                name: "lime green",
                 code: "#1DF914"
             },
             {
-                name: "Green",
+                name: "green",
                 code: "#1CAC78"
             },
             {
-                name: "Pine Green",
+                name: "pine green",
                 code: "#158078"
             },
             {
-                name: "Sky Blue",
+                name: "sky blue",
                 code: "#80DAEB"
             },
             {
-                name: "Midnight Blue",
+                name: "midnight blue",
                 code: "#1A4876"
             },
             {
-                name: "Blue",
+                name: "blue",
                 code: "#1F75FE"
             },
             {
-                name: "Periwinkle",
+                name: "periwinkle",
                 code: "#C5D0E6"
             },
             {
-                name: "Indigo",
+                name: "indigo",
                 code: "#5D76CB"
             },
             {
-                name: "Royal Purple",
+                name: "royal purple",
                 code: "#7851A9"
             },
             {
-                name: "Purple",
+                name: "purple",
                 code: "#926EAE"
             },
             {
-                name: "Fuchsia",
+                name: "fuchsia",
                 code: "#C364C5"
             },
             {
-                name: "Magenta",
+                name: "magenta",
                 code: "#F664AF"
             },
             {
-                name: "Pink",
+                name: "pink",
                 code: "#FDD7E4"
             },
             {
-                name: "White",
+                name: "white",
                 code: "#EDEDED"
             }, 
             {
-                name: "Silver",
+                name: "silver",
                 code: "#CDC5C2",
             },
             {
-                name: "Gray",
+                name: "gray",
                 code: "#95918C"
             }, 
             {
-                name: "Black",
+                name: "black",
                 code: "#232323",
             },
             {
-                name: "Brown",
+                name: "brown",
                 code: "#B4674D"
             },
         ]
         this.easy = [
             {
-                name: "Red",
+                name: "red",
                 code: "#EE204D"
             },
             {
-                name: "Orange",
+                name: "orange",
                 code: "#FF7538"
             },
             {
-                name: "Yellow",
+                name: "yellow",
                 code: "#FCE883"
             },
             {
-                name: "Green",
+                name: "green",
                 code: "#1CAC78"
             },
             {
-                name: "Blue",
+                name: "blue",
                 code: "#1F75FE"
             },
             {
-                name: "Purple",
+                name: "purple",
                 code: "#926EAE"
             },
             {
-                name: "Pink",
+                name: "pink",
                 code: "#FDD7E4"
             },
             {
-                name: "White",
+                name: "white",
                 code: "#EDEDED"
             }, 
             {
-                name: "Gray",
+                name: "gray",
                 code: "#95918C"
             }, 
             {
-                name: "Black",
+                name: "black",
                 code: "#232323",
             },
             {
-                name: "Brown",
+                name: "brown",
                 code: "#B4674D"
             },
         ]

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import {DrawingContext} from '../App';
 import styled from 'styled-components';
 import Crayon from './Crayon';
 import Colors from '../classes/Colors';
@@ -35,19 +36,20 @@ const CrayonBox = styled.div`
 
 // import a Pattern list that contains all the keys
 
-const colors = new Colors();
+// const colors = new Colors();
 
 function Canvas() {
+    let drawing = useContext(DrawingContext);
     const [selectedColor, setSelectedColor] = useState({code: "#EDEDED", name: "White" });
     const [message, setMessage] = useState("Complete the tasks above to unlock more pictures!");
 
     return(
         <Container>
             <Menu />
-            <PatternManager setMessage={setMessage} colorCode={selectedColor.code} colorName={selectedColor.name} pattern="monkey" />
+            <PatternManager setMessage={setMessage} colorCode={selectedColor.code} colorName={selectedColor.name} />
             <Message>{message}</Message>
             <CrayonBox id="colors" >
-                {colors.easy.map((color) => 
+                {drawing.colors.map((color) => 
                     <Crayon 
                         getColor={(fill) => setSelectedColor(fill)} 
                         isSelected= {(color.code === selectedColor.code)} 

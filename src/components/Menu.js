@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
 import ReactModal from 'react-modal';
-import Tasks from './Tasks';
+import TaskList from './TaskList';
 import settings from '../images/settings.svg';
 import lock from '../images/keyhole.svg';
 import key from '../images/key.svg';
-import unchecked from '../images/unchecked.svg';
+import next from '../images/next.svg';
+import { DrawingContext } from '../App';
 
 const Container = styled.div`
     height: 54px;
@@ -51,40 +52,37 @@ const Task = styled.p`
     }
 `;
 
-const tasks = [
-    {
-        task: "Color one of the monkey's ears green",
-        isCompleted: false
-    }, 
-    {
-        task: "Color the monkey's tail blue",
-        isCompleted: true
-    }, 
-    {
-        task: "Color one of the monkey's arms red",
-        isCompleted: false 
-    }
-];
-
 function Menu() {
     const [isShowingTasks, setShowingTasks] = useState(false);
+    let drawing = useContext(DrawingContext);
 
     return (
         <Container>
             <Icon src={settings} margins="0 auto"/>
-                <Icon src={key} margins="none" />
-                <Task
-                    onClick={(e) => setShowingTasks(true)}
-                >
-                    This is a task!!! a really really really long task 
-                </Task>
-            <Icon src={lock} margins="0 auto"/>
+            <Task
+                onClick={(e) => setShowingTasks(true)}
+            >
+                {drawing.getNextTask()}
+            </Task>
+            <Icon src={key} margins="none" />
+            <Icon src={(drawing.isComplete()) ? next : lock} margins="0 auto" />
             <ReactModal 
                 isOpen={isShowingTasks}
                 contentLabel="Task List"
-                style={{ content: { width: "94%", height: "96%", padding: "0", border: "none", borderRadius: "5px", margin: "0", left: "3%", top: "2%" } }}
+                style={{ 
+                    content: { 
+                        width: "94%", 
+                        height: "96%", 
+                        padding: "0", 
+                        border: "none", 
+                        borderRadius: "5px", 
+                        margin: "0", 
+                        left: "3%", 
+                        top: "2%" 
+                    } 
+                }}
             >
-                <Tasks setShowingTasks={setShowingTasks} tasks={tasks} />
+                <TaskList setShowingTasks={setShowingTasks} />
             </ReactModal>
         </Container>
     )

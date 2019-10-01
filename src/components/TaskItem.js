@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import checked from '../images/checked.svg';
@@ -31,7 +31,7 @@ const Txt = styled.div`
     padding: 5px;
 `;
 
-function Task(props) {
+function TaskItem(props) {
     return (
         <Container>
             <Check src={(props.isCompleted ? checked : unchecked)} />
@@ -40,4 +40,4 @@ function Task(props) {
     );
 }
 
-export default Task;
+export default TaskItem;

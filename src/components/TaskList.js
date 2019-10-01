@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
-
-import Task from './Task';
+import TaskItem from './TaskItem';
 import closeIcon from '../images/close.svg';
+import { DrawingContext } from '../App';
 
 const Container = styled.div`
     background-color: #1CAC78;
     padding: 20px 10px;
     height: 98%;
-    overflow: visible;
+    overflow: auto;
 `;
 
 const Close = styled.img`
@@ -33,7 +33,9 @@ const List = styled.div`
     overflow-y: scroll;
 `;
 
-function Tasks(props) {
+function TaskList(props) {
+    const drawing = useContext(DrawingContext);
+
     return (
         <Container>
             <Close 
@@ -42,12 +44,16 @@ function Tasks(props) {
             />
             <Header>Tasks</Header>
             <List>
-                {props.tasks.map((task) => 
-                        <Task task={task.task} isCompleted={task.isCompleted} />
-                            )}
+                {drawing.tasks.map((task) => 
+                    <TaskItem task={task.getTaskMsg(drawing.pattern)} isCompleted={false} />
+                    )}
+                <br/>
+                {drawing.completed.map((c) => 
+                    <TaskItem task={c.getTaskMsg(drawing.pattern)} isCompleted={true} />
+                    )}
             </List>
         </Container>
     );
 }
 
-export default Tasks;
+export default TaskList;
