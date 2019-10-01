@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Crayon from './Crayon';
 import Colors from '../classes/Colors';
 import PatternManager from '../patterns/PatternManager.js';
+import Menu from './Menu';
 
 // import paper from '../images/paper.jpg';
 
@@ -16,11 +17,7 @@ const Container = styled.div`
     height: auto;
     min-height: 100vh;
     overflow-y: scroll;
-`;
-
-// Styled Components
-const Info = styled.div`
-    height: 50px;
+    overflow-x: hidden;
 `;
 
 const Message = styled.p`
@@ -46,6 +43,7 @@ function Canvas() {
 
     return(
         <Container>
+            <Menu />
             <PatternManager setMessage={setMessage} colorCode={selectedColor.code} colorName={selectedColor.name} pattern="monkey" />
             <Message>{message}</Message>
             <CrayonBox id="colors" >

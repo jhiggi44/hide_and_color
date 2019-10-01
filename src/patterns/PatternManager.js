@@ -8,7 +8,7 @@ const dimensions = (() => {
         // if height minus the size of the crayonbox is less than 300, then return height as the minimum
         if ((h - 200) < 300)
             return h;
-        return h - 200;
+        return h - 300;
     }
     return w; 
 })();

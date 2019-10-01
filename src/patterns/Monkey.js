@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
+// #F0F5FF, #d2dcec
 function Monkey(props) {
     const [colorMap, setColorMap] = useState({});
     function fill(id) {
-        return colorMap[id] ? colorMap[id] : "#F0F5FF";
+        return colorMap[id] ? colorMap[id] : "#d2dcec";
     }
     function stroke(id) {
-        return colorMap[id] ? "black" : "#F0F5FF";
+        return colorMap[id] ? "black" : "#d2dcec";
     }
     function formatInfo(target, color) {
         let targets = target.split("_");

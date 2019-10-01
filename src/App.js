@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Views from './components/Views';
 
-// const themes = [
-//   ["#3D90B3", "#FF4062", "#ABE7FF", "#C9C8B1", "#F0E600"]
-// ]
+import Canvas from './components/Canvas';
 
 // Styled Components
 const Container = styled.div`
@@ -18,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Views />
+        <Canvas />
       </Container>
     );
   }
